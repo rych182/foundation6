@@ -1,0 +1,184 @@
+body {
+	background-color: black;
+}
+
+h1,h2,h3,h4,h5,h6,button, input[type="submit"]{
+	font-family: 'Gaegu', cursive;
+}
+
+#social-container{
+	background-color: #1c3643;
+}
+
+#logo-container .callout{
+	background-color: #ee3f54;
+	color: white;
+	margin-bottom: 0;
+}
+
+#menu-container{
+	background-color: #48a19d;
+}
+
+#menu-container ul{
+	border: 0;
+}
+
+#menu-container li a{
+	color: white;
+	font-family: 'Gaegu', cursive;
+	text-transform: uppercase;
+	background-color:#48a19d;
+}
+
+/*Sirve para quitar el borde blanco que aparecía en el submenu desktop de los días*/
+#submenu-container{
+	border: 0;
+}
+
+#menu-container li a:hover,
+#submenu-container li a:hover{
+	color: #f6e15f;
+}
+
+#submenu-container li a{
+	background-color: #48a19d;
+	color: white;
+}
+
+
+#tickets-action .callout{
+	background-color: #5e7eb7;
+	color:white;
+	margin-bottom: 0;
+}
+
+#tickets-action .callout button{
+	color: white;
+	border: 1px solid white;
+}
+
+#lineup-container{
+	padding: 1em 0;
+}
+
+#lineup-container,
+#lineup-container .tabs-panel,
+#lineup-container .tabs,
+#lineup-container .tabs .tabs-title,
+#lineup-container .tabs .tabs-title.is-active a{
+	background-color: #9676af;
+	color:white;
+	border: 0;
+	text-transform: uppercase;
+	font-family: 'Gaegu', cursive;
+}
+
+.tabs-content{
+	border: 0;
+}
+
+
+#lineup-container .tabs .tabs-title a {
+	font-size: 18px;
+	color: #a7fffb;
+	font-family: 'Gaegu', cursive;
+}
+
+#lineup-container .tabs .tabs-title a:hover{
+	color: white;
+	background-color: #9676af;
+}
+
+.tabs-title{
+	display: inline-block;
+	float: none;
+}
+
+#lineup-container .orbit-container{
+	margin-bottom: 1em;
+}
+
+/*El problema del Lineup*/
+.orbit-container {
+  height: auto !important;
+}
+
+.orbit-slide {
+  max-height: none !important;
+}
+/*El problema del Lineup*/
+
+/*Precios*/
+#tickets-container{
+	padding: 1em 0;
+	background-color: #f6e15f;
+	color: #161742;
+}
+
+/*Tablas de precios*/
+.pricing-table{
+	border: 1px solid #161742;
+	font-family: 'Gaegu', cursive;	
+}
+
+.pricing-table li,
+.pricing-table li.description{
+	font-size: 20px;
+}
+
+.pricing-table li.price,
+.pricing-table li.title{
+	font-size: 30px;
+}
+
+/*Info*/
+#info-container{
+	background-color: #161742;
+	color: white;
+	padding: 1em 0;
+}
+
+#info-container .info-map iframe{
+	width: 100%;
+}
+
+/*Suscripción*/
+#suscribete-container{
+	background-color: #ee3f54;
+	color: white;
+	padding: 1em 0;
+}
+
+#suscribete-container h4 small{
+	color: #ffcddc;
+}
+
+#suscribete-container input{
+	font-family: 'Gaegu', cursive;
+}
+
+.data-sticky{
+	z-index: 2;
+}
+
+section .sticky-container{
+	height: -0.4px;
+}
+
+/*Menú responsive off-canvas*/
+
+#offCanvas{
+	background-color: black;
+	color: white;
+	font-family: 'Gaegu', cursive;
+	border-color: black;
+}
+
+/*Sirve para quitar el background verde que aparecía*/
+#offCanvas li a{
+	background-color: black;
+	color:#48a19d;
+}
+
+

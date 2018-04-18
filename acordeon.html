@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <!--<link rel="stylesheet" href="css/foundation.css">-->
+    <link rel="stylesheet" href="css/foundation-flex.css">
+    <link rel="stylesheet" href="css/app1.css">
+  </head>
+  <body>
+  
+  <div class="row">
+    <div class="column">Hola soy una columna</div>
+  </div>
+
+  <div class="expanded row">
+     <div class="column">Hola soy una columna dentro de un expanded row</div>
+   </div>
+
+   <div class="row">
+     <div class="column small-3">Columna con small 1 </div>
+     <div class="column small-3">Columna con small 2</div>
+     <div class="column small-3">Columna con small 3</div>
+     <div class="column small-3">Columna con small 4</div>
+   </div>
+
+   <div class="row">
+     <div class="column small-12 medium-3">Columna con small-12 y medium-3 numero1 </div>
+     <div class="column small-12 medium-3">Columna con small-12 y medium-3 numero2</div>
+     <div class="column small-12 medium-3">Columna con small-12 y medium-3 numero3</div>
+     <div class="column small-12 medium-3">Columna con small-12 y medium-3 numero4</div>
+   </div>
+
+   <div class="row">
+     <div class="column small-12 medium-4">Hay un espacio en medio porque utilice </div>
+     <div class="column small-12 medium-4">medium-4 y solo puse 2 divs</div>
+   </div>
+
+   <div class="row">
+     <div class="column small-12 medium-4">Para poner el espacio en medio utilice la</div>
+     <div class="column small-12 medium-4 end">clase "end" después de medium-4</div>
+   </div>
+
+   <div class="row">
+     <div class="column small-12 medium-4">medium-offset-1 te pone un pequeño espacio al lado</div>
+     <div class="column small-12 medium-4 medium-offset-1 end">de la ultima columna</div>
+   </div>
+
+   <div class="row">
+     <div class="column small-12 medium-4">medium-offset-1 te pone un pequeño espacio al lado</div>
+     <div class="column small-12 medium-4 end medium-offset-1">de la ultima columna</div>
+   </div>
+
+   <div class="row small-uncollapse medium-collapse">
+     <div class="column small-12 medium-4">Collapse permite que el texto esté pegado al borde</div>
+     <div class="column small-12 medium-4 end medium-offset-1">se pone al lado de la clase "row" y "uncollapse" separado</div>
+   </div>  
+
+   <div class="row">
+     <div class="column small-3 small-centered medium-4 medium-centered large-uncentered">Para centrar se usa la clase medium-centered, también aplica small-centered para pantallas pequeñas y si no lo quieres centrar "large-uncentered"</div>
+   </div>
+
+  <div class="row">
+    <div class="column small-12 medium-6 medium-push-6">Esto iba al inicio, clase "medium-push-6", no podemos excedernos de la cantidad de columnas que son 12</div>
+    <div class="column small-12 medium-6 medium-pull-6">Esto iba al final, clase "medium-pull-6"</div>
+  </div>
+
+  <div class="row">
+    <div class="column small-3">3 columnas</div>
+    <div class="column">Aunque no le pongas "small-9", Foundation te lo pondrá por default</div>
+  </div>
+
+  <div class="row">
+    <div class="column shrink">Con "Shrink" ocupa solo el tamaño del texto y su pequeño margen</div>
+    <div class="column">Hola mundo</div>
+  </div>
+
+  <div class="row">
+    <div class="column small-12 medium-expand">1</div>
+    <div class="column small-12 medium-expand">2</div>
+    <div class="column small-12 medium-expand">3</div>
+    <div class="column small-12 medium-expand">4</div>
+    <div class="column small-12 medium-expand">5</div>
+    <div class="column small-12 medium-expand">6</div>
+    <div class="column small-12 medium-expand">7</div>
+    <div class="column small-12 medium-expand">8</div>
+    <div class="column small-12 medium-expand">9</div>
+    <div class="column small-12 medium-expand">10</div>
+    <div class="column small-12">Los números de arriba tienen la clase "medium-expanded" y small-12, esto hace que tomen el tamaño que le corresponden, dependiendo el número de columnas, pero cuando estén en responsivo de pantalla pequeña tomen toda la columna entera.</div>
+  </div>
+
+  <div class="row medium-unstack">
+    <div class="column">1</div>
+    <div class="column">2</div>
+    <div class="column">3</div>
+    <div class="column">4</div>
+    <div class="column">5</div>
+    <div class="column">6</div>
+    <div class="column">7</div>
+    <div class="column">8</div>
+    <div class="column">9</div>
+    <div class="column">10</div>
+    <div class="column">11</div>
+    <div class="column">12</div>
+  </div>
+  
+  <div class="row">
+    <div class="column">Lo de arriba es lo mismo que "medium-expand" pero usando la clase "medium-unstack" en el div de la clase "row" y en responsivo también apila las 12 columnas</div>
+  </div>
+  
+  <div class="row align-right">
+    <div class="column small-3">Columnas alineadas a la derecha</div>
+    <div class="column small-3">Con la clase "align-right" en el mismo div que row</div>
+  </div>
+
+  <div class="row align-center">
+    <div class="column small-3">Columnas alineadas al centro</div>
+    <div class="column small-3">Con la clase "align-right" en el mismo div que row</div>
+  </div>
+
+  <div class="row align-justify">
+    <div class="column small-2">"align-justify" reparte equitativamente</div>
+    <div class="column small-2"> el espacio entre las columnas, pero pero las columnas</div>
+    <div class="column small-2"> se pegan a los bordes</div>
+  </div>
+
+  <div class="row align-spaced">
+    <div class="column small-2">"align-spaced" reparte equitativamente</div>
+    <div class="column small-2"> el espacio entre las columnas, pero dejando</div>
+    <div class="column small-2"> espacio entre las columnas y los bordes</div>
+  </div>
+
+  <div class="row align-spaced align-middle">
+    <div class="column small-2">Hola</div>
+    <div class="column small-2">Aquí estoy alineando el texto utiilizando una clase de alineación vertical llamada "align-middle" que me pone todo en medio, esta se pone normalmente junto con una clase de alineado horizontal como las de arriba(align-justify y align-spaced).</div>
+    <div class="column small-2">mundo</div>
+  </div>
+
+  <div class="row align-spaced align-bottom">
+    <div class="column small-2">Hola</div>
+    <div class="column small-2">Aquí estoy alineando el texto hacia el fondo utilizando la clase "align-bottom", esta se pone normalmente junto con una clase de alineado horizontal como las de arriba(align-justify y align-spaced).</div>
+    <div class="column small-2">mundo</div>
+  </div>
+
+  <div class="row align-spaced align-middle">
+    <div class="column small-2">Hola</div>
+    <div class="column small-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptates dolor explicabo sed, modi eos nisi qui illum sapiente doloremque eius dicta, facere fugit hic molestiae odio assumenda quaerat quo.</div>
+    <div class="column small-2 align-self-bottom">Aquí estoy alineando a nivel columna con la clase "align-self-bottom"</div>
+  </div>
+
+  <div class="row align-spaced align-middle medium-collapse">
+    <div class="column small-2">Hola</div>
+    <div class="column small-2">Con la clase "medium-collapse" la ponemos en el div donde esta la clase row, y pegamos el texto a las orillas de nuestro contenedor</div>
+    <div class="column small-2 align-self-bottom">Aquí estoy alineando a nivel columna con la clase "align-self-bottom"</div>
+  </div>
+
+  <div class="row align-spaced align-middle small-collapse medium-uncollapse">
+    <div class="column small-2">Hola</div>
+    <div class="column small-2">Con la clase "medium-collapse" la ponemos en el div donde esta la clase row, y pegamos el texto a las orillas de nuestro contenedor, también podemos tener un "small-colapse" y "medium-uncollapse"</div>
+    <div class="column small-2 align-self-bottom">Aquí estoy alineando a nivel columna con la clase "align-self-bottom"</div>
+  </div>
+
+  <div class="row align-spaced align-middle small-collapse medium-uncollapse">
+    <div class="column small-4 small-order-2 large-order-1">Esto va al principio pero lleva la clase  "large-order-1" y cuando es pequeño con "small-order-2" cambia</div>
+    <div class="column small-4 small-order-1 large-order-2">Esto va al final pero lleva la clase "large-order-2" cambia y cuando es pequeño con "small-order-1"</div>
+  </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

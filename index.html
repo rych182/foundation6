@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cuernavaca fest</title>
+	<link rel="stylesheet" href="icons/foundation-icons.css">
+	<link rel="stylesheet" href="css/foundation-flex.css">
+	<link rel="stylesheet" href="css/pricing-table.css">
+	<link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<div class="off-canvas-wrapper">
+		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+			<!--Menú oculto a la izquierda-->
+			<div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+				<nav data-magellan>
+					<!--data-drilldown detecta cuales son los submenus y agrega la animación que se desplaza hacia la derecha-->
+					<ul class="vertical menu" data-drilldown>
+						<li><a href="#tickets-container"><i class="fi-ticket"></i> Tickets</a></li>
+						<li>
+							<a href="#lineup-container">Lineup</a>
+							<ul class="vertical menu" id="submenu-container">
+								<li><a data-toggle-dia="Viernes" href="#lineup-container">Viernes</a></li>
+								<li><a data-toggle-dia="Sabado" href="#lineup-container">Sábado</a></li>
+								<li><a data-toggle-dia="Domingo" href="#lineup-container">Domingo</a></li>
+							</ul>
+						</li>
+						<li><a href="#info-container">Info</a></li>
+						<li><a href="#suscribete-container">Suscríbete</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!--Aquí va todo el contenido de nuestro sitio, que es lo que desplazará hacia la derecha el menú off-canvas-->
+			<div class="off-canvas-content" data-off-canvas-content>
+				<!--Redes sociales-->
+				<section id="social-container">
+					<div class="row align-center text-center">
+						<div class="column small-1">
+							<a href="#" target="_blank">
+								<i class="fi-social-facebook"></i>
+							</a>
+						</div>
+						<div class="column small-1">
+							<a href="#" target="_blank">
+								<i class="fi-social-twitter"></i>
+							</a>
+						</div>
+						<div class="column small-1">
+							<a href="#" target="_blank">
+								<i class="fi-social-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</section>
+				<!--/Redes sociales-->
+
+				<!--LOGO-->
+				<section id="logo-container">
+					<div class="callout text-center">
+						<h1>Cuerna fest!</h1>
+					</div>
+				</section>
+				<!--/LOGO-->
+
+				<!--Menú-->
+				<section data-sticky-container id="scrollSticky">
+					<div class="data-sticky" data-sticky data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
+						<nav id="menu-container" data-magellan >
+							<!--El "show for small only" sirve para indicar que es lo que se va a ver en tamaño pequeño-->
+							<ul class="menu align-spaced show-for-small-only">
+							<!--El data-toggle es justo el ID que le pusimos hasta arriba en el tercer DIV-->
+								<li><a href="#" data-toggle="offCanvas">Menú</a></li>
+							</ul><!--El show-for-medium indica que se verá de tamaño mediano en adelante-->
+							<ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu  style="height: 40px;">
+								<li><a href="#tickets-container"><i class="fi-ticket"></i> Tickets</a></li>
+								<li>
+									<a href="#lineup-container">Lineup</a>
+									<ul class="vertical menu">
+										<li><a data-toggle-dia="Viernes" href="#lineup-container">Viernes</a></li>
+										<li><a data-toggle-dia="Sabado" href="#lineup-container">Sábado</a></li>
+										<li><a data-toggle-dia="Domingo" href="#lineup-container">Domingo</a></li>
+									</ul>
+								</li>
+								<li><a href="#info-container">Info</a></li>
+								<li><a href="#suscribete-container">Suscríbete</a></li>
+							</ul>
+						</nav>
+					</div>
+				</section>
+				<!--/Menú-->
+
+				<!--Tickets-->
+				<section id="tickets-action">
+					<div class="callout large text-center">
+						<a href="#tickets-container">
+							<button class="large hollow button">Comprar boletos</button>
+						</a>
+					</div>
+				</section>
+
+				<!--/Tickets-->	
+
+				<!--Lineup-->
+				<section id="lineup-container" data-magellan-target="lineup-container">
+					<h3 class="text-center">Lineup</h3>
+					<ul class="tabs text-center" data-tabs id="lineup-tabs">
+						<li class="tabs-title is-active">
+							<a href="#Viernes">Friday - Mexicanisimos</a>
+						</li>
+						<li class="tabs-title">
+							<a href="#Sabado">Saturday - Millenials</a>
+						</li>
+						<li class="tabs-title">
+							<a href="#Domingo">Domingo - Latinoamerica-España</a>
+						</li>
+					</ul>
+
+					<div class="tabs-content" data-tabs-content="lineup-tabs">
+						
+						<div class="tabs-panel is-active" id="Viernes">
+							<div class="row">
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="https://i1.wp.com/www.actualmx.com/wp-content/uploads/2017/02/alejandro_ferndandez.jpg?resize=900%2C600" alt="Ale" class="orbit-image">
+												<figcaption class="orbit-caption">Alejandro Fernandez</figcaption>
+											</div>
+										</div>
+									</div>					
+								</div>
+								
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="https://i0.wp.com/www.soygrupero.com.mx/wp-content/uploads/vicente-fernandez-1.jpg?fit=900%2C600&ssl=1" alt="Chente" class="orbit-image">
+												<figcaption class="orbit-caption">Vicente fernandez</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="https://i1.wp.com/www.actualmx.com/wp-content/uploads/2017/03/natalia-lafourcade-teatro-metropolitan.jpg?resize=900%2C600" alt="Natalia Laforcade" class="orbit-image">
+												<figcaption class="orbit-caption">Natalia Laforcade</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="https://www.luismiguelonline.com/media/k2/items/cache/13b5e0deaf19b06816d21e67ad4e211c_XL.jpg" alt="Luis Miguel" class="orbit-image">
+												<figcaption class="orbit-caption">Luis Miguel</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="http://www.revistalunanegra.com/wp-content/uploads/2017/10/IMG_3386.jpg" alt="Chente" class="orbit-image">
+												<figcaption class="orbit-caption">Paquita la del barrio</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="http://vallartaopina.net/wp-content/uploads/2018/01/JULION.jpg" alt="Chente" class="orbit-image">
+												<figcaption class="orbit-caption">Julion Alvarez</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+													
+							</div>
+
+						</div>
+						<div class="tabs-panel" id="Sabado">
+							<div class="row">
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/03/Blink182PR160811-2.jpg" alt="Blink182" class="orbit-image">
+												<figcaption class="orbit-caption">Blink182</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="http://ksassets.timeincuk.net/wp/uploads/sites/55/2013/08/2013EminemPA-9459109290813.jpg" alt="Blink182" class="orbit-image">
+												<figcaption class="orbit-caption">Eminem</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="http://cdn2-www.musicfeeds.com.au/assets/uploads/sum-41.jpg" alt="Sum41" class="orbit-image">
+												<figcaption class="orbit-caption">Sum41</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>	
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="http://mouse.latercera.com/wp-content/uploads/2018/03/RHCP-900x600.jpg" alt="Red Hot chilli peppers" class="orbit-image">
+												<figcaption class="orbit-caption">Red Hot chilli peppers</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>	
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="https://bucket1.glanacion.com/anexos/fotos/11/1982511.jpg" alt="Avril Lavigne" class="orbit-image">
+												<figcaption class="orbit-caption">Avril Lavigne</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="https://creativekatarsis.com/wp-content/uploads/2014/11/slipknot-grupo-900-x-600.jpg" alt="Blink182" class="orbit-image">
+												<figcaption class="orbit-caption">Slipknot</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>									
+							</div>					
+						</div>
+						<div class="tabs-panel" id="Domingo">
+							<div class="row">
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="http://obs.na-mexico-1.telefonicaopencloud.com/cdn/OYE/2015/imagenes/ALEJANDRO_0.jpg" alt="Alejando Sanz" class="orbit-image">
+												<figcaption class="orbit-caption">Alejandro Sanz</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="https://media.elobservador.com.uy/adjuntos/181/imagenes/000/927/0000927127.jpg" alt="Ricky Martin" class="orbit-image">
+												<figcaption class="orbit-caption">Ricky Martin</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="http://www.recital.cl/wp-content/uploads/photo-gallery/Calle_13_en_Frontera_Festival_-_Club_Hi%CC%81pico_2014_-_06.jpg" alt="Calle 13" class="orbit-image">
+												<figcaption class="orbit-caption">Calle 13</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="https://lasuperagenda.com/media/concierto-de-enrique-iglesias-en-lisboa/enrique-iglesias-900x600.jpg" alt="Enrique iglesias" class="orbit-image">
+												<figcaption class="orbit-caption">Enrique Iglesias</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="http://sertv.gob.pa/media/k2/items/cache/bb6535b0ed00ead1ceff2f17f02bb379_XL.jpg" alt="Miguel Bose" class="orbit-image">
+												<figcaption class="orbit-caption">Miguel Bose</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 medium-6 column">
+									<div class="orbit" data-orbit>
+										<div class="orbit-container">
+											<div class="orbit-slide">
+												<img src="http://culto.latercera.com/wp-content/uploads/2018/02/shakira-portrait-spain-2015-billboard-900x600.jpg" alt="Shakira" class="orbit-image">
+												<figcaption class="orbit-caption">Shakira</figcaption>
+											</div>
+										</div>
+									</div>
+								</div>						
+							</div>
+				
+							
+						</div>	
+					</div>				
+				</section>	
+				<!--/Lineup-->	
+
+				<!--Compra de boletos(usando building blocks de Foundation6)-->	
+
+				<section id="tickets-container">
+					<h3 class="text-center">Comprar boletos</h3>
+					<div class="row" data-equalizer data-equilazee-on="small">
+						<div class="column small-9 small-offset-1 medium-6 medium-offset-3">
+				
+							<ul class="pricing-table">
+							  <li class="title">Platino</li>
+							  <li class="price">$120</li>
+							  <li class="description">Acceso Viernes, Sábado y Domingo</li>
+							  <li>2 bebidas por día.</li>
+							  <li>Estacionamiento includo todos los días</li>
+							  <li>Participa en un sorteo para entrar a camerinos</li>
+							  <li><a class="button" href="#">Comprar platino</a></li>
+							</ul>
+
+						</div>
+						<div class="column small-5 small-offset-1 medium-4 medium-offset-2">
+				
+							<ul class="pricing-table">
+							  <li class="title">Gold</li>
+							  <li class="price">$90</li>
+							  <li class="description">Acceso Viernes, Sábado y Domingo</li>
+							  <li data-equalizer-watch>1 bebida por día</li>
+							  <li>-</li>
+							  <li>-</li>
+							  <li><a class="button" href="#">Comprar Gold</a></li>
+							</ul>
+
+						</div>
+						<div class="column small-5 medium-4">
+				
+							<ul class="pricing-table">
+							  <li class="title">Silver</li>
+							  <li class="price">$65</li>
+							  <li class="description">Acceso Viernes, Sábado y Domingo</li>
+							  <li data-equalizer-watch>-</li>
+							  <li>-</li>
+							  <li>-</li>
+							  <li><a class="button" href="#">Comprar Silver</a></li>
+							</ul>
+
+						</div>			
+					</div>
+				</section>
+
+				<!--/Compra de boletos(usando building blocks de Foundation6)-->
+
+				<!--Suscribete-->
+				<section id="suscribete-container" data-magellan-target="suscribete-container">
+					<h3 class="text-center">Suscribete</h3>
+					<h4 class="text-center"><small>Y recibe las últimas novedades del concierto</small></h4>
+					<form action="" method="">
+						<div class="row columns small-12 medium-6">
+							<div class="input-group">
+								<span class="input-group-label"><i class="fi-mail"></i></span>
+								<input type="text" name="email" class="input-group-field" placeholder="tu@correo.com" required>
+								<div class="input-group-button">
+									<input type="submit" class="button" value="Suscribirse">
+								</div>
+							</div>
+						</div>
+					</form>
+				</section>
+
+				<!--Suscribete-->
+
+				<!--INFO-->
+				<section id="info-container" data-magellan-target="info-container">
+					<h3 class="text-center">Información</h3>
+					<div class="text-center">
+						<div class="info-map" data-interchange="[map-small.html, small],[mapa.html, medium]"></div>
+					</div>
+				</section>
+
+				<!--/INFO-->
+			
+			</div>
+		</div>
+	</div>
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
